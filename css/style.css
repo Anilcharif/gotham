@@ -1,16 +1,16 @@
 /*reset*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300&family=Poppins:wght@200&display=swap');
 html{
     font-size: 62.5%;     /*16px    * 62.5% = 1.000*/
+    scroll-behavior: smooth;   /* animer les lien  ajouter */
+    background: #000 url(../asset/Batman.jpg)no-repeat fixed center center / cover ;
 
 }
 body{
     font: 1.6rem "Poppins", sans-serif;
     margin: 0;
-    background-image: url(/asset/Batman.jpg);
-    background-repeat: no-repea;
-    background-size: cove;
-
+    line-height: 1.6rem;
+    text-rendering:optimizeLegibility
 }
 h1,h2,h3,h4,h4,h6,p,ul{          /* reset titre */
     padding: 0;
@@ -21,8 +21,9 @@ a{
     list-style: none;
     text-decoration:none;     /* enlever les deco des liens*/
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     font-weight: 200;
+    font-family: 'Comic Neue', cursive;
 
 }
 img{                               /* centrer l'image */
@@ -42,11 +43,20 @@ théme
 la palette couleur 
 typo
 */
+
 :root{
     --bgc-primary: #d3d2d6;
     --bgc-secondary: #222;
     --bgc-last: #3d3838;
     --color-text: #fff;
+}
+nav h2 ul, main, footer{
+    max-width: 120rem;
+    margin: 1rem auto;
+    background-color: rgba(250,250,250,0.8);
+    overflow: hidden;
+    border-radius: 2rem;
+    
 }
 header h1{
     line-height: 5.0rem;
@@ -54,6 +64,7 @@ header h1{
     color: var(--bgc-primary);
     background-color: var(--bgc-secondary);
     padding-top: 1.5rem;
+
     
 }
 header h1::before{ /* icone en css */
@@ -64,7 +75,7 @@ header h1::before{ /* icone en css */
  }
 
 ul li {
-    width: calc(100% /4 - 1rem);
+    width: calc(100% /4 - 1rem);     /* Reduire la taille image */
     display: block;
     float: right;
     margin: 2rem 1rem 1rem 0;
@@ -108,6 +119,11 @@ section ul li{
 section ul li:nth-of-type(5), section ul li:nth-of-type(6){
     width: calc(100% / 2 - 1rem);
 }
+/*/header,nav,main,footer{
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0,8); */
+
 footer p{
     text-align: center;
     color: #fff
