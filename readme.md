@@ -1,6 +1,6 @@
 ![gotham](./asset/Batman_cover.jpg)
- &copy; Batman - Projet Ghotham City
- # Ghotham
+ &copy; Batman - Projet Gotham City
+ # Gotham
  Venez voir la véritable histoire de Batman !!! : 
 
  [Plus de détail](https://github.com/Anilcharif/gotham.git)
