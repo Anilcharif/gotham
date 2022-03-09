@@ -92,14 +92,12 @@ section p{
  section h2{
     line-height: 6.0rem;
     padding-left: 1rem;
-    background-color: var(--bgc-primary);
     cursor: pointer;
 }
 main {
     max-width: 120rem;
     margin: 5rem auto;
     padding: 1rem;
-    background-color: var(--bgc-primary);
     border-radius: 2rem;      /*arrondi*/
     overflow: hidden;         /*bordure de page blanche*/
 
