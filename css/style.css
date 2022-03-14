@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 }
 img{                               /* centrer l'image */
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -106,7 +106,17 @@ main {
 
 }
 
- 
+.zoher img{
+    height: 84.4rem;
+
+}
+.bat img{
+    height: 41.5rem;
+}
+.bat1{
+    height: 41.5rem;
+
+}
 section ul{
     overflow: hidden;          /* permet de creer un masque */
     padding: 1rem 0 0 1rem;    /* permet de creer un espacement ente les image */
