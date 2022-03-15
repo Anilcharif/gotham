@@ -3,7 +3,7 @@
  # Gotham
  Venez voir la véritable histoire de Batman !!! : 
 
- [Plus de détail](https://github.com/Anilcharif/gotham.git)
+ [Plus de détail](https://anilcharif.github.io/gotham/)
 
  ## Sommaire
  * 1.Histoire
@@ -12,4 +12,4 @@
 
 
  ### Lien :
-[Cliquer sur le lien](https://github.com/Anilcharif/gotham.git)
+[Cliquer sur le lien] (https://anilcharif.github.io/gotham/)
