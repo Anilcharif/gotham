@@ -63,7 +63,7 @@ nav{
     z-index: 1; 
     background-color: rgba(214, 246, 246, 0.904);
     border-radius: 1.2rem;
-    padding: 2rem;
+    padding: 1.2rem;
     font-weight : 800;
     
 }
@@ -111,7 +111,7 @@ nav ol li a{
 section p{
     border: #222 0.1rem solid;
     padding: .9rem;
-    margin: .1rem;
+    margin: 3rem;
     text-align: justify;
 
 }
@@ -175,4 +175,38 @@ footer p{
     color: #000;
     max-width: 150rem;
     margin: 0 auto;
+}
+
+footer details{
+    max-width: 20rem;
+    margin: auto;
+    cursor: pointer;
+}
+details > summary {
+    text-align: center;
+    padding: 0.2rem;
+    background-color: var(--bgc-last);
+    border: none;
+    box-shadow: .3rem .3rem .4rem rgb(126, 125, 125);
+    list-style: none;
+    color: #fff
+}
+details > summary::before{        /* permet d'ouvrir un bouton */
+    content: " + "; 
+    color: #fff;
+}
+details[open] > summary::before{
+    content:" - "
+}
+
+details > summary::-webkit-details-marker {/*for chrome */
+    display: none;
+
+}
+details > p{
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: .2rem .6rem;
+    margin: 0;
+    box-shadow: .3rem 3rem 4rem rgb(126 125 125);
 }
