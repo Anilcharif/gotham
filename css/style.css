@@ -89,7 +89,7 @@ header h1::before{ /* icone en css */
 
 nav h2 ul, main, footer{
     max-width: 120rem;
-    margin: 0rem auto;
+    margin: 2rem auto;
     background-color: rgba(219, 219, 219, 0.8);
     border-radius: 1rem;
 
