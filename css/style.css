@@ -85,12 +85,15 @@ header h1::before{ /* icone en css */
     content: url(../asset/gitlab.svg);
     vertical-align: -2rem;
     margin-right: 2rem;
+    filter: invert(85%);
+
 }
 
 nav h2 ul, main, footer{
     max-width: 120rem;
+
     margin: 2rem auto;
-    background-color: rgba(219, 219, 219, 0.8);
+    background-color: #ccc;
     border-radius: 1rem;
 
 }
@@ -208,5 +211,5 @@ details > p{
     background-color: #fff;
     padding: .2rem .6rem;
     margin: 0;
-    box-shadow: .3rem 3rem 4rem rgb(126 125 125);
+    box-shadow: .3rem 3rem 4rem #fff;
 }
