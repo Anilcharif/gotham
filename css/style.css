@@ -95,7 +95,6 @@ nav h2 ul, main, footer{
     margin: 2rem auto;
     background-color: #ccc;
     border-radius: 1rem;
-
 }
 
 ul li {
@@ -172,7 +171,12 @@ section ul li{
 
   section p{
         padding-bottom: 1rem;
+
 }
+footer{
+    padding: 1.5rem;
+}
+
 footer p{
     text-align: center;
     color: #000;
