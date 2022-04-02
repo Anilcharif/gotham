@@ -4,7 +4,7 @@
 html{
     font-size: 62.5%;     /*16px    * 62.5% = 1.000*/
     scroll-behavior: smooth;   /* animer les lien  ajouter */
-    background: #000 url(../asset/Batman.jpg)no-repeat fixed center center / cover ;
+    background: #000 url(../asset/Gothambackground.jpg) no-repeat fixed center center / cover ;
 
 }
 body{
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h4,h6,p,ul{          /* reset titre */
     list-style: none;
 }
 a{
-    list-style: none;
+    list-style: none;         
     text-decoration:none;     /* enlever les deco des liens*/
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -50,7 +50,7 @@ typo
 */
 
 :root{
-    --bgc-primary: #d3d2d6;
+    --bgc-primary: #fafafa;
     --bgc-secondary: #222;
     --bgc-last: #3d3838;
     --color-text: #fff;
@@ -61,7 +61,7 @@ nav{
     position: sticky;               /* le haut du sommaire reste toujour*/
     top: 0;
     z-index: 1; 
-    background-color: rgba(214, 246, 246, 0.904);
+    background-color: rgba(199, 244, 244, 0.904);
     border-radius: 1.2rem;
     padding: 1.2rem;
     font-weight : 800;
@@ -70,7 +70,44 @@ nav{
 main nav li{
     line-height: 2rem;
 
+
+
+
+/* menu somaire */
 }
+header h1::before, section h2::before{
+    content: url(../favicon/favicon-16x16.png);
+    vertical-align: top;
+    margin-right: .5rem;
+}
+
+
+nav .main-menu{
+    margin-top: 2rem;
+}
+nav .main-menu li{
+    display: inline-block;
+    width: calc(100% / 3 );
+}
+nav .main-menu li:not(li:last-child){
+    border-right: solid .1rem #222;
+}
+nav .main-menu li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 4.5rem;
+    transition: all .6s ease-in-out;
+}
+nav .main-menu li:hover a{
+    background-color: rgb(170, 161, 161); 
+
+} 
+
+
+
+
+
 
 header h1{
     line-height: 5.0rem;
@@ -85,13 +122,15 @@ header h1::before{ /* icone en css */
     content: url(../asset/gitlab.svg);
     vertical-align: -2rem;
     margin-right: 2rem;
-    filter: invert(85%);
+    filter: invert(100%);
+
 
 }
 
+
 nav h2 ul, main, footer{
     max-width: 120rem;
-
+  
     margin: 2rem auto;
     background-color: #ccc;
     border-radius: 1rem;
@@ -109,11 +148,12 @@ ul li {
 }
 nav ol li a{
     color: #222;
+
 }
 section p{
     border: #222 0.1rem solid;
     padding: .9rem;
-    margin: 3rem;
+    margin: 0.5rem;                                 /* a revoir */
     text-align: justify;
 
 }
@@ -139,19 +179,6 @@ section img:hover{
     /* transform: scale(1.5); */
     border-radius: 25%;
     margin-top: auto;
-}
-
-.zoher img{
-    height: 84.4rem;
-
-}
-.bat img{
-    height: 41.5rem;
-}
-.bat1{
-    height: 41.5rem;
-
-
 
 
 }
@@ -166,9 +193,9 @@ section ul li{
     float: left;
     margin: 0 1rem 1rem 0;
 }
-/*section ul li:nth-of-type(5), section ul li:nth-of-type(6){
-    width: calc(100% / 2 - 1rem); */
-
+section ul li:nth-of-type(5), section ul li:nth-of-type(6){
+    width: calc(100% / 2 - 1rem); 
+}
   section p{
         padding-bottom: 1rem;
 
@@ -216,4 +243,41 @@ details > p{
     padding: .2rem .6rem;
     margin: 0;
     box-shadow: .3rem 3rem 4rem #fff;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 100.0rem){
+    section p{
+        text-align: justify;
+    }
+    nav .main-menu li{
+        display: block;
+        width: auto;
+    }
+    nav .main-menu li:not(li:last-child){
+        border-right: 0;
+    }
+    nav .main-menu li a{
+        text-align: left;
+        color: #000;
+
+    }
+    nav .main-menu li{
+        background-color: var(--color-primary);
+        padding: .5rem;
+        margin-bottom: .1rem;
+    }
+    header h1{
+        text-shadow: none;
+    }
+    header h1::before,section h2:before, nav h2:before{
+        content: '';
+    }
+    section h2, nav h2{
+        padding: 0 0 0 .1rem;
+        font-size: 2.5rem;
+        text-shadow: none;
+    }
 }
