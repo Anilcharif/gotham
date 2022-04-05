@@ -75,11 +75,11 @@ main nav li{
 
 /* menu somaire */
 }
-header h1::before, section h2::before{
+/*header h1::before, section h2::before{
     content: url(../favicon/favicon-16x16.png);
     vertical-align: top;
-    margin-right: .5rem;
-}
+    margin-right: .5rem;*/
+
 
 
 nav .main-menu{
