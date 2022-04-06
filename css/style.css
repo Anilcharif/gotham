@@ -86,7 +86,7 @@ nav .main-menu{
 }
 nav .main-menu li{
     display: inline-block;
-    width: calc(100% / 3 );
+    width: calc(100% / 3.2 );
 }
 nav .main-menu li:not(li:last-child){
     border-right: solid .1rem #222;
