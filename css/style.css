@@ -102,11 +102,6 @@ nav .main-menu li:hover a{
     background-color: rgb(170, 161, 161); 
 
 } 
-
-
-
-
-
 header h1{
     line-height: 5.0rem;
     margin: 0 auto;
@@ -116,13 +111,14 @@ header h1{
     padding-top: 1.5rem;
     
 }
-header h1::before{ /* icone en css */
-    content: url(../asset/gitlab.svg);
-    vertical-align: -2rem;
+/*header h1::before{ /* icone en css */
+   
+
+header img{
+    width: 4.5rem;
+    vertical-align: -0.5rem;
     margin-right: 2rem;
     filter: invert(100%);
-
-
 }
 
 
@@ -208,7 +204,9 @@ footer p{
     max-width: 150rem;
     margin: 0 auto;
 }
-
+footer p a{
+    color: #222;
+}
 footer details{
     max-width: 20rem;
     margin: auto;
@@ -229,8 +227,8 @@ details > summary::before{        /* permet d'ouvrir un bouton */
 }
 details[open] > summary::before{
     content:" - "
+   
 }
-
 details > summary::-webkit-details-marker {/*for chrome */
     display: none;
 
